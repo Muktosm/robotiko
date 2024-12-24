@@ -1,0 +1,30 @@
+.hero {
+  @apply w-full bg-[#000000];
+  .hero_content {
+    @apply px-[118px] py-[96px] relative z-[2];
+    .subHeading {
+      @apply font-DM_sans font-bold text-[15px] text-[#D8D8D8] tracking-[1px] z-[2];
+    }
+    .heading {
+      @apply relative w-[606px] py-[20px] font-DM_sans font-bold text-[64px] text-transparent bg-clip-text bg-gradient-to-b from-[#FFC9FD] via-[#7C8DE5] to-[#A6EFFF] z-[2];
+     }
+    .paragraph {
+      @apply w-[606px] font-DM_sans font-bold text-[16px] leading-[26px] text-[#D8D8D8] relative z-[2];
+    }
+    .background {
+      @apply absolute right-[118px] bottom-0 z-[1];
+      .imageFloat {
+        @apply w-[254px] bg-[#151721] absolute bottom-0 left-[171px] p-[32px];
+        h3 {
+          @apply text-transparent bg-clip-text bg-gradient-to-b from-[#FFC9FD] via-[#7C8DE5] to-[#A6EFFF] font-bold text-[64px];
+        }
+        h5 {
+          @apply font-DM_sans font-bold text-[18px] text-[#FFFFFF] mb-[20px];
+        }
+        p {
+          @apply font-DM_sans font-normal text-[12px] text-[#D8D8D8];
+        }
+      }
+    }
+  }
+}

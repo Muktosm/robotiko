@@ -1,0 +1,43 @@
+.featurs {
+  @apply bg-[#000000] pt-[120px];
+  .container {
+    .featurs_content {
+      @apply px-[118px] pb-[120px];
+      .featur_text {
+        @apply flex items-center justify-between;
+        .sub_heading {
+          @apply w-[657px]  font-DM_sans font-normal text-[15px] text-[#D8D8D8] tracking-[1px] mb-[20px];
+        }
+        .heading {
+          @apply w-[657px] font-DM_sans font-bold text-[48px] text-[#FFFFFF];
+        }
+      }
+      .featurs {
+        @apply w-full flex  gap-[60px];
+        .img {
+          @apply w-[657px] h-[430px] bg-[#151721];
+        }
+        .right {
+          @apply w-[386px] h-[430px] flex flex-col justify-between;
+          .meachin_learning,
+          .sensor_integration,
+          .computer_vision {
+            @apply flex items-start gap-[42px];
+            > img {
+              @apply mt-[8px];
+            }
+            > .text_area {
+              @apply flex flex-col gap-[20px];
+              > .heading {
+                @apply font-DM_sans font-bold text-[32px] text-[#FFFFFF];
+              }
+              > .text {
+                @apply font-DM_sans font-normal text-[16px] leading-[26px] text-[#D8D8D8];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

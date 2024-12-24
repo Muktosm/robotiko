@@ -1,0 +1,17 @@
+.carousel {
+  @apply w-full bg-[#000000];
+  .container {
+    .carousel_content {
+      @apply px-[118px] flex items-center justify-between;
+      > div {
+        @apply w-[271px] h-[271px] flex flex-col gap-[10px] items-center justify-center  bg-[#151721] transition-all duration-500 ease-in-out hover:bg-[#7B8CE5];
+        > h5 {
+          @apply font-DM_sans font-bold text-[48px] text-[#FFFFFF];
+        }
+        > p {
+          @apply font-DM_sans font-bold text-[16px] leading-[26px] text-[#D8D8D8];
+        }
+      }
+    }
+  }
+}

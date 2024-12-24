@@ -1,0 +1,20 @@
+.navbar {
+  @apply bg-[#000000] py-[48px];
+  .container {
+    .navrow {
+      @apply flex justify-between items-center px-[118px];
+      .navLinks {
+        @apply flex;
+        > ul {
+          @apply flex  items-center gap-[24px];
+          li > a {
+            @apply font-DM_sans font-bold text-[14px] tracking-[2px] text-[#FFFFFF];
+            &.active {
+              @apply text-[#7B8CE5];
+            }
+          }
+        }
+      }
+    }
+  }
+}

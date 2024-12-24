@@ -1,0 +1,59 @@
+.why_us {
+  @apply w-full bg-[#000000] pt-[120px] pb-[120px] font-DM_sans;
+  .container {
+    .why_us_content {
+      @apply px-[118px] flex justify-between;
+      .left {
+        @apply flex flex-col gap-[63px];
+        > .title {
+          @apply w-[520px];
+          > .sub_heading {
+            @apply font-bold text-[15px] tracking-[8%] text-[#D8D8D8] mb-[20px];
+          }
+          > .heading {
+            @apply font-bold text-[48px] text-[#FFFFFF];
+          }
+        }
+        .icon_box {
+          @apply w-[520px] flex flex-col gap-[44px];
+          > div {
+            @apply flex gap-[42px] items-start;
+            > img {
+              @apply mt-[8px];
+            }
+            > .title {
+              @apply flex flex-col gap-[20px];
+              h5 {
+                @apply font-bold text-[32px] text-[#FFFFFF];
+              }
+              p {
+                @apply font-normal text-[16px] leading-[26px] text-[#D8D8D8];
+              }
+            }
+          }
+        }
+      }
+      .image_box {
+        @apply w-[524px] bg-[#151721] relative;
+        > .card {
+          @apply w-[280px] absolute  bg-[#1B255E] bottom-0 left-0 p-[40px] flex flex-col gap-[10px];
+          > .rating {
+            @apply font-bold text-[40px] text-[#FFFFFF];
+          }
+          > .icon {
+            @apply text-[24px] flex gap-[4px] text-[#A6EFFF];
+          }
+          .title {
+            @apply flex flex-col gap-[10px];
+            > .heading {
+              @apply font-bold text-[18px] text-[#FFFFFF];
+            }
+            > .text {
+              @apply font-normal text-[16px] leading-[26px] text-[#D8D8D8];
+            }
+          }
+        }
+      }
+    }
+  }
+}

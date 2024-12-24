@@ -1,0 +1,38 @@
+.testimonial {
+  @apply w-full bg-[#000000];
+  .container {
+    .testimonial_content {
+      @apply mx-[68px] font-DM_sans  bg-[#151721] px-[132px] py-[96px];
+      .title {
+        @apply w-full font-bold text-[40px] text-[#FFFFFF] mb-[20px] text-center text-transparent bg-clip-text bg-gradient-to-r from-[#FFC9FD] via-[#7C8DE5] to-[#A6EFFF];
+      }
+      > .cards {
+        @apply flex gap-[60px]    justify-center flex-wrap;
+        > .card {
+          @apply w-[458px] p-[44px] bg-[#000000] flex flex-col gap-[16px];
+          > .icon {
+            @apply text-[24px] text-[#A6EFFF] flex gap-[4px];
+          }
+          > .text {
+            @apply font-normal text-[16px] leading-[26px] text-[#D8D8D8];
+          }
+          > .profile {
+            @apply flex gap-[16px] items-center;
+            > .img {
+              @apply border-[2px] border-[#1B255E] rounded-full w-[64px] h-[64px] bg-[#151721];
+            }
+            > div {
+              @apply flex flex-col gap-[10px];
+              .name {
+                @apply font-bold text-[18px] text-[#FFFFFF];
+              }
+              .profession {
+                @apply font-normal text-[12px] text-[#D8D8D8] leading-[16px];
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
